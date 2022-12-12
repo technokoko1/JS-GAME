@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/styles/index.css">
+    <title>Jumper Boy</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="http://127.0.0.1:5501/html/mainPage.html">HomePage</a></li>
+                <li><a href="http://127.0.0.1:5501/index.html">Jumper Boy</a></li>
+                <li><a href="http://127.0.0.1:5501/html/indexTwo.html">Slider Game</a></li>
+                <li><a href="http://127.0.0.1:5501/html/indexTre.html">Flapy Bird</a></li>
+                <li><a href="http://127.0.0.1:5501/html/about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2 id="jumper-boy">JUMPER BOY</h2>
+        <div class="flex-container">
+            <aside id="left-aside">
+                <a href="http://127.0.0.1:5501/html/money.html">
+                    <img src="/img/webiste-add3.png.jpg" alt="">
+                </a>
+            </aside>
+            <div id="game" onclick="jump()">
+                <div id="character"></div>
+                <div id="block"></div>
+            </div>
+            <aside id="right-aside">
+                <a href="http://127.0.0.1:5501/html/money.html">
+                    <img src="/img/website-add2.png.jpg" alt="">
+                </a>
+            </aside>
+        </div>
+    </main>
+
+    <div id="death">
+        <p id="death-paragraph">'You Lose! Restart the page to play again.</p>
+        <button class="refresh" onclick="gameRestart()">
+            Restart
+        </button>
+    </div>
+
+    <footer>
+        Footer lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, consectetur.
+   </footer>
+    <script src="/scripts/script.js"></script>
+</body>
+
+</html>

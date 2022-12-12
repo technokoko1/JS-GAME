@@ -1,0 +1,200 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    outline: none;
+    overflow-x: hidden;
+}
+
+body {
+    height: 100vh;
+    background-color: #f2f2f2;
+
+}
+
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+
+h2 {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(255, 61, 74);
+    list-style: none;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+
+}
+
+nav li {
+    padding: 3px;
+}
+li a {
+    text-decoration: none;
+    color: white;
+    
+}
+
+
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+
+
+ :root{
+    --width: 400px;
+    --boardWidth: 500px;
+}
+
+.game{
+    width: var(--boardWidth);
+    height: 300px;
+    margin:auto;
+    border: 1px solid black;
+    background-color: white;
+}
+
+.slider{
+    visibility: hidden;
+    background-color: red;
+    height: 20px;
+    width: 100px;
+    position: relative;
+}
+#slider1{
+    visibility: visible;
+}
+.animate{
+    animation: side 4s infinite linear;
+}
+@keyframes side{
+    0%{left:0px}
+    50%{left:var(--width)}
+    100%{left:0px}
+}
+
+
+button{
+    font-size: 1rem;
+    padding: 0.5rem 2rem;
+    border: 1px solid black;
+    border-radius: 0.3rem;
+    margin: 1rem auto;
+    display: block;
+}
+#btn{
+    background-color: lightgreen;
+}
+#btn:hover, #restart:hover{
+    background-color: yellow; 
+     cursor: pointer;
+}
+#btn:active, #restart:active{
+    background-color: red;
+}
+#restart{
+    background-color: red;
+    display: none;
+    color: white;
+}
+
+#dead {
+    background-color: white;
+    position: absolute;
+    border: 2px solid rgb(255, 61, 74);
+    border-radius: 5px;
+    width: 200px;
+    height: 80px;
+    top :200px;
+    left: 350px;
+    font-size: 10px;
+    padding: 5px;
+    display: none;
+}
+
+#score{
+    margin-left: 45px;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(255, 61, 74);
+    list-style: none;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 17px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    color: white;
+
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#left-aside {
+    width: 100px;
+    height: 210px;
+    margin-left: 20px;
+}
+
+#left-aside img {
+    max-width: 100%;
+    max-height: 100%;
+   
+}
+
+#right-aside {
+    width: 90px;
+    height: 210px;
+    margin-right: 20px;
+}
+
+#right-aside img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+a{
+    border-radius: 2px;
+    padding: 1px;
+    padding-left: 3px;
+    padding-right: 3px;
+    }
+    
+    nav a:hover{
+        background-color: white;
+        
+        color: rgb(255, 61, 74);
+    }
+    

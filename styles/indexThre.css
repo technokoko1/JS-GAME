@@ -1,0 +1,183 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+h2 {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(255, 61, 74);
+    list-style: none;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+
+}
+
+nav li {
+    padding: 3px;
+}
+li a {
+    text-decoration: none;
+    color: white;
+    
+} */
+
+ body {
+    height: 100vh;
+    background-color: #f2f2f2;
+
+}
+
+#game{
+    width: 400px;
+    height: 400px;
+    border: 2px solid black;
+    margin :auto;
+    overflow: hidden;
+    background-color: #73e0ff;
+    background-size: cover;
+   }
+   
+   #block{
+       width: 50px;
+       height: 400px;
+       background-image: url(/img/NicePng_pipes-png_388476.png);
+       background-size: contain;
+       position: relative;
+       left: 400px;
+       animation: block 2.5s infinite;
+   }
+   
+   @keyframes block{
+       0%{ left:400px }
+       
+       100%{ left:-70px}
+   }
+   
+   #hole{
+       width: 50px;
+       height: 150px;
+       background-color: #73e0ff;
+       position: relative;
+       left: 400px;
+       top:-400px;
+       animation: block 2.5s infinite;
+   }
+   
+   #character{
+       width: 57px;
+       height: 40px;
+       background-image: url(/img/PngItem_1842460.png);
+       background-size: contain;
+       position: absolute;
+       top:100px
+   }
+
+   main {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#left-aside {
+    width: 100px;
+    height: 200px;
+    margin-left: 20px;
+}
+
+#left-aside img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#right-aside {
+    width: 100px;
+    height: 200px;
+    padding-right: 20px;
+}
+
+#right-aside img {
+    max-width: 100%;
+    max-height: 100%;
+    
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(255, 61, 74);
+    list-style: none;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 17px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    color: white;
+
+}
+
+#death{
+    background-color: white;
+    position: absolute;
+    border: 2px solid rgb(255, 61, 74);
+    border-radius: 5px;
+    width: 150px;
+    height: 50px;
+    top :200px;
+    left: 370px;
+    font-size: 10px;
+    padding: 5px;
+    display: none;
+}
+
+.refresh{
+    margin-left: 50px;
+    margin-top: 5px;
+    padding: 3px;
+    background-color: rgb(255, 61, 74);
+    border-radius: 5px;
+    color: white;
+    border: none;
+    cursor: pointer;
+
+}
+
+a{
+    border-radius: 2px;
+    padding: 1px;
+    padding-left: 3px;
+    padding-right: 3px;
+    }
+    
+   nav a:hover{
+        background-color: white;
+        
+        color: rgb(255, 61, 74);
+    }
+    

@@ -1,0 +1,109 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+   
+}
+
+.gameCards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+   
+}
+
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(255, 61, 74);
+    list-style: none;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 17px;
+
+}
+
+nav li {
+    padding: 3px;
+}
+li a {
+    
+    color: white;
+    
+}
+
+.gameCard{
+   
+   
+    border-radius: 5px;
+    width: 200px;
+    height: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+   
+    box-shadow: -1px 2px 13px 0px rgba(0,0,0,0.75);
+   
+}
+a:hover{
+    width: 205px;
+    height: 355px;
+    
+}
+
+.gameCard img{
+    width: 160px;
+    height: 260px;
+    border-radius: 5px;
+    
+}
+
+.gameCard h3{
+    color: #10121a;
+  
+}
+
+.gameCard p{
+    color: #454647;
+    font-size: 15px;
+   
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(255, 61, 74);
+    list-style: none;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 17px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    color: white;
+
+}
+a{
+border-radius: 2px;
+padding: 1px;
+padding-left: 3px;
+padding-right: 3px;
+}
+
+nav a:hover{
+    background-color: white;
+    
+    color: rgb(255, 61, 74);
+}
